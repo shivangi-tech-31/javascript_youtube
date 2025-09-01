@@ -1,7 +1,5 @@
 //singleton i.e. constructor se agr ban rha to aapne trh ka ek hi object h
-
-const { jsx } = require("react/jsx-runtime");
-
+//hi
 //object iterals
 //Object.create   //is a constructor method in which singleton is formed
 
@@ -29,8 +27,12 @@ console.log(JsUser);
 
 
 //Adding a function in an object:
-// JsUser.greeting = function(){
-//     console.log("Hello js user");
+JsUser.greeting = function(){
+    console.log("Hello js user");
     
-// }
-// console.log(JsUser.greeting());
+}
+JsUser.greetingTwo = function(){
+    console.log(`Hello js user, $(this.name) `);//when u have to access same objec hen u have to use this keyword 
+    
+}
+console.log(JsUser.greeting());
