@@ -13,5 +13,7 @@ const {courseinstructor}= course
 //if you have to shorten or nickname of courseinstructor then use below syntax:
 const {courseinstructor:instructor}= course
 
-console.log(courseinstructor);
-console.log(instructor);
+// console.log(courseinstructor);
+// console.log(instructor);
+
+//json is used in apis.
