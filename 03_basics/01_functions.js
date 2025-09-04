@@ -36,4 +36,37 @@ function loginUserMessage (username){
 
 //a situation when u dont know how many args may come either in a shopping tym scenario
 
-function cala
+function calculateCartPrice(...num1){
+  //rest operator used when u have many inputs unknownn
+  return num1
+}
+
+// console.log(calculateCartPrice(200 , 400, 500));
+
+//making an object:
+const user = {
+    username: "hitesh",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+
+//passing direct object
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+//alternate way::
+console.log(returnSecondValue([200, 400, 500, 1000]));
