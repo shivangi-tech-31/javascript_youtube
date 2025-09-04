@@ -17,3 +17,4 @@ const {courseinstructor:instructor}= course
 // console.log(instructor);
 
 //json is used in apis.
+//looks like this //{ "name":"hitesh", }//keys nd values all r in string
