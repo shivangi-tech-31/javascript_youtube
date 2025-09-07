@@ -40,4 +40,57 @@ map.set('name', 'John')
 map.set('age', 30)
 map.set('isStudent', false)
     
-console.log(map); 
+// console.log(map);  
+
+//this gives all the keys in the map in an array form
+for (const key of map) {
+    // console.log(key);
+}
+// [ 'name', 'John' ]
+// [ 'age', 30 ]
+// [ 'isStudent', false ]
+
+//this destructure the array given by above code 
+for (const [key, value] of map) {
+    // console.log(`${key}: ${value}`);
+}
+
+// name: John
+// age: 30
+// isStudent: false
+
+//Can we apply for of loop on object
+
+const obj = {
+    name: 'Alice',
+    age: 25,
+    isEmployed: true
+};
+
+// for (const item of obj) { //TypeError: obj is not iterable
+//     // console.log(item);
+// }
+
+//Solution to iterate over object using for of loop
+for (const key of Object.keys(obj)) {
+    //console.log(`${key}: ${obj[key]}`);
+}
+
+for (const [key, value] of Object.entries(obj)) {
+    //console.log(`${key}: ${value}`);
+}
+
+//alternative:: using for in loop 
+
+for(const key in obj){
+    console.log(`${key} is for ${obj[key]}`);
+    
+}
+
+//diff bw for in and for of 
+// for-in:: Iterates over enumerable properties of an object
+    //   :: Returns the keys (property names)
+//for-of:: Iterates over iterable objects like arrays, strings, maps, etc.
+    //   ::	Returns the values of the iterable
+
+  
